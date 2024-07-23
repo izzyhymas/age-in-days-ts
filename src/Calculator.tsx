@@ -3,13 +3,21 @@ import React, { useState } from "react";
 import styles from "./Calculator.module.css";
 
 const Calculator: React.FC = () => {
+  // State for storing name
   const [name, setName] = useState("");
+  // State for storing age
   const [age, setAge] = useState<number | string>("");
+  // State for storing calculated age in days, this is displayed to user
   const [ageInDays, setAgeInDays] = useState<number | null>(null);
 
+  // Checks if string is a valid number
+  const isNumber = (num: string): boolean => /^\d+$/.test(num);
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    // Prevents page from refreshing when the submit button is clicked
     event.preventDefault();
 
+    // If age is a valid number, calculate age in days and set the state
     if (typeof age === "number") {
       setAgeInDays(Number(age) * 365);
     } else {
@@ -20,13 +28,15 @@ const Calculator: React.FC = () => {
   const handleAgeChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ): void => {
-    setAge(event.target.valueAsNumber);
-    // const newAge = event.target.value;
-    // if (newAge === "") {
-    //   setAge("");
-    // } else {
-    //   setAge(Number(newAge));
-    // }
+    const newAge = event.target.value;
+
+    // If input is cleared, set age state to empty string
+    if (newAge === "") {
+      setAge("");
+    } else if (isNumber(newAge)) {
+      // If the input is a valid number, update age state
+      setAge(Number(newAge));
+    }
   };
 
   return (
@@ -56,6 +66,7 @@ const Calculator: React.FC = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      {/* Display the result if ageInDays is not null */}
       {ageInDays && (
         <h2>
           {name ? name : "This person"} is {ageInDays} days old!

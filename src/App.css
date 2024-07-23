@@ -4,3 +4,20 @@
   padding: 2rem;
   text-align: center;
 }
+
+h1 {
+  padding: 1rem;
+  color: #f49ab8;
+  font-weight: bold;
+}
+
+p {
+  color: #f49ab8;
+  font-weight: bolder;
+}
+
+h2 {
+  margin: 1em auto;
+  color: #f49ab8;
+  font-weight: bold;
+}
