@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Age in Days Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application that calculates a person’s age in days based on their input. It takes the user’s name and age in years, and then displays the equivalent age in days.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+	* Input fields for name and age
+	*	Form validation to ensure the age is a valid number
+	*	Displays the age in days after form submission
+	*	Responsive and user-friendly design
 
-## Expanding the ESLint configuration
+# Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+	*	cd into folder
+	*	Clone Repository
+	*	Run npm create vite@latest
+	*	cd into repository folder
+    *	Run npm install
+	*	Run npm run dev
 
-- Configure the top-level `parserOptions` property like this:
+# Github Pages
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Here is the link to view the Age in Days Calculator App on Github Pages: <br/>
+https://izzyhymas.github.io/age-in-days-ts/
+   
+## You should now have access to the Age in Days Calculator App!
