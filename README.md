@@ -4,7 +4,7 @@ This project is a simple React application that calculates a person’s age in d
 
 # Features
 
-	*   Input fields for name and age
+	*   	Input fields for name and age
 	*	Form validation to ensure the age is a valid number
 	*	Displays the age in days after form submission
 	*	Responsive and user-friendly design
