@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 import styles from "./Calculator.module.css";
 
+/**
+ * 
+ * @returns {JSX.Element} The rendered Calculator component
+ */
+
 const Calculator: React.FC = () => {
   // State for storing name
   const [name, setName] = useState("");
@@ -10,9 +15,19 @@ const Calculator: React.FC = () => {
   // State for storing calculated age in days, this is displayed to user
   const [ageInDays, setAgeInDays] = useState<number | null>(null);
 
-  // Checks if string is a valid number
+  /**
+   * Checks if string is a valid number
+   * 
+   * @param {string} num - the string to check
+   * @returns {boolean} True if the string is a valid number, false if not
+   */
   const isNumber = (num: string): boolean => /^\d+$/.test(num);
 
+  /**
+   * Handles the form submission and calculates age in days
+   * 
+   * @param {React.FormEvent<HTMLFormElement>} event - The form submission event 
+   */
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     // Prevents page from refreshing when the submit button is clicked
     event.preventDefault();
@@ -25,6 +40,11 @@ const Calculator: React.FC = () => {
     }
   };
 
+  /**
+   * Handles changes to age input
+   * 
+   * @param {React.ChangeEvent<HTMLInputElement>} event - Input change event 
+   */
   const handleAgeChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ): void => {
