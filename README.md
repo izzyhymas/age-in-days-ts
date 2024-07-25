@@ -1,26 +1,45 @@
-# Age in Days Calculator
+# Days Lived Calculator
 
-This project is a simple React application that calculates a person’s age in days based on their input. It takes the user’s name and age in years, and then displays the equivalent age in days.
+A simple React application to calculate the number of days a person has lived based on their age.
 
-# Features
+## Features
 
-	*   	Input fields for name and age
-	*	Form validation to ensure the age is a valid number
-	*	Displays the age in days after form submission
-	*	Responsive and user-friendly design
+- **_Real-time Calculations_**: Enter an age to see the total number of days lived.
+- **_Input Validations_**: Ensures valid numbers for accurate calculations
 
-# Installation
+## Setup
 
-	*	cd into folder
-	*	Clone Repository
-	*	Run npm create vite@latest
-	*	cd into repository folder
-    *	Run npm install
-	*	Run npm run dev
+Follow these steps to set up and run the project locally.
 
-# Github Pages
+### Installation
 
-Here is the link to view the Age in Days Calculator App on Github Pages: <br/>
-https://izzyhymas.github.io/age-in-days-ts/
-   
-## You should now have access to the Age in Days Calculator App!
+1. **Clone the Repository**
+
+```bash
+git clone git@github.com:izzyhymas/age-in-days-ts.git
+```
+
+2. **Navigate to the Project Directory**
+
+```bash
+cd age-in-days-ts
+```
+
+3. **Install Dependencies**
+
+```bash
+npm install
+```
+
+### Running the Application
+
+1. **Start the Development Server**
+
+```bash
+npm run dev
+```
+
+### Open in Browser
+Click the local host link on the npm run dev tab.
+
+### Everything should be up and running now!
